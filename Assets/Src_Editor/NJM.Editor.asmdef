@@ -1,0 +1,18 @@
+{
+    "name": "NJM.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5ba1ff9f8b7a8b04e917afb3e59fc1e4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

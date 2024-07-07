@@ -1,0 +1,63 @@
+分享内容：
+1. 程序生命周期
+- 初始化与主循环
+    - .NET / C语言
+- Unity 的主循环
+    - 永远只有一套生命周期: Awake / Update / ......
+    - FixedUpdate 错误, 以及物理Tick
+    - FixedUpdate 处理时间与物理的错误
+- 游戏主循环
+    - Init:
+        - LoadAssets()
+        - LoadSaving()
+    - while:
+        - ProcessInput()
+        - DoLogic()
+        - Draw()
+2. 通用架构, 重要的类：
+- 后缀命名：用以区分功能（Entity/Repo/Domain）
+- 前缀命名：Role/Bullet
+- Entity: 实体(模型)定义
+- Factory: 生成实体
+- Repository: 存储实体
+- Controller: 控制实体. for 
+- Domain: 实体执行逻辑
+* FSM
+
+3. 架构概念
+- 控制流 / 依赖流
+    - 分层逻辑: 底层/高层
+- 例子：
+    Human -> Dog, 调用形成控制流和依赖流
+- 原则
+    - SOLID （不适合游戏，因为游戏要频繁修改）
+    - KISS，Spartan Programmer
+* 程序集
+* 逻辑表现分离
+* 耦合(松耦合)/解耦
+4. 工作流
+- 内容生产期如何批量生产内容(比如关卡编辑器)
+    - 运行时 Entity
+        - 给玩家的
+    - 模板 TemplateEntity
+        - 表格
+    - 编辑时 EditorEntity
+        - 工具
+        - 给开发人员的
+- ID 设计
+    - enum EntityType
+    - EntityID 唯一
+    - TypeID 类型 ID
+- 目录
+    - Res_Runtime
+    - Res_Sample
+    - Res_Editor
+    - Src_Runtime
+    - Src_Editor
+    - Src_Sample
+    - Src_Tests
+- 资源与目录(使用Addressables)
+    - 按Entity划分一起
+    - 不按格式划分(比如图片/动画)
+
+注: *表示没讲到的

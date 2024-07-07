@@ -1,0 +1,6 @@
+Main
+    Controller
+        Domain
+            Factory
+            Repo
+                Context
